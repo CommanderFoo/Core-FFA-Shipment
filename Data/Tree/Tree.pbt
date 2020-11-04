@@ -443,6 +443,12 @@ Objects {
         SelfId: 16944460689344375616
       }
     }
+    Overrides {
+      Name: "cs:class_btn_container"
+      ObjectReference {
+        SelfId: 1944135849184987028
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1,7 +1,7 @@
 ﻿--[[
 local level = math.floor((c + math.sqrt(c * c - 4 * c * (-xp) ))/ (2 * c))
 
-I now use a long table of manual entries so it can be fine tubed.
+I now use a long table of manual entries so it can be fine tuned.
 ]]
 
 local RANKS = {}

@@ -300,11 +300,11 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Control {
-    Width: 1000
-    Height: 600
+    Width: 800
+    Height: 500
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -342,9 +342,10 @@ Objects {
   }
   ParentId: 16944460689344375616
   ChildIds: 4852676170096014431
-  ChildIds: 3975589846028225356
-  ChildIds: 13782857404290276975
-  ChildIds: 3580204055397808166
+  ChildIds: 5438069969417795029
+  ChildIds: 12971470759386040739
+  ChildIds: 17653090361612236592
+  ChildIds: 17369926035535482575
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -353,9 +354,8 @@ Objects {
   }
   Control {
     Width: 250
-    Height: 400
+    Height: 270
     UIX: 100
-    UIY: 100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -366,20 +366,20 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middleleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
   }
 }
 Objects {
-  Id: 3580204055397808166
-  Name: "UI Button"
+  Id: 17369926035535482575
+  Name: "Class"
   Transform {
     Location {
     }
@@ -392,6 +392,7 @@ Objects {
     }
   }
   ParentId: 1944135849184987028
+  ChildIds: 1406835701139470323
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -401,7 +402,7 @@ Objects {
   Control {
     Width: 100
     Height: 50
-    UIY: 150
+    UIY: 220
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -409,16 +410,18 @@ Objects {
     }
     UseParentWidth: true
     Button {
-      Label: "Class 1"
+      Label: "Class 5"
       FontColor {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      FontSize: 20
+      FontSize: 25
       ButtonColor {
-        A: 0.26700002
+        R: 0.356400251
+        B: 0.973445594
+        A: 1
       }
       HoveredColor {
         A: 0.85800004
@@ -455,8 +458,64 @@ Objects {
   }
 }
 Objects {
-  Id: 13782857404290276975
-  Name: "UI Button"
+  Id: 1406835701139470323
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17369926035535482575
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 275
+    UIX: 300
+    UIY: -220
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.356400251
+        B: 0.973445594
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17653090361612236592
+  Name: "Class"
   Transform {
     Location {
     }
@@ -469,6 +528,7 @@ Objects {
     }
   }
   ParentId: 1944135849184987028
+  ChildIds: 12396961221558885845
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -478,7 +538,7 @@ Objects {
   Control {
     Width: 100
     Height: 50
-    UIY: 100
+    UIY: 165
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -486,16 +546,18 @@ Objects {
     }
     UseParentWidth: true
     Button {
-      Label: "Class 1"
+      Label: "Class 4"
       FontColor {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      FontSize: 20
+      FontSize: 25
       ButtonColor {
-        A: 0.26700002
+        R: 0.270497859
+        G: 1
+        A: 1
       }
       HoveredColor {
         A: 0.85800004
@@ -532,8 +594,64 @@ Objects {
   }
 }
 Objects {
-  Id: 3975589846028225356
-  Name: "UI Button"
+  Id: 12396961221558885845
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17653090361612236592
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 275
+    UIX: 300
+    UIY: -165
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.270497859
+        G: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12971470759386040739
+  Name: "Class"
   Transform {
     Location {
     }
@@ -546,6 +664,7 @@ Objects {
     }
   }
   ParentId: 1944135849184987028
+  ChildIds: 7952288319667095335
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -555,7 +674,7 @@ Objects {
   Control {
     Width: 100
     Height: 50
-    UIY: 50
+    UIY: 110
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -563,16 +682,18 @@ Objects {
     }
     UseParentWidth: true
     Button {
-      Label: "Class 1"
+      Label: "Class 3"
       FontColor {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      FontSize: 20
+      FontSize: 25
       ButtonColor {
-        A: 0.26700002
+        R: 0.0781874284
+        G: 0.0822827145
+        A: 1
       }
       HoveredColor {
         A: 0.85800004
@@ -593,6 +714,198 @@ Objects {
         Id: 841534158063459245
       }
       IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 7952288319667095335
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12971470759386040739
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 275
+    UIX: 300
+    UIY: -110
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.0781874284
+        G: 0.0822827145
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5438069969417795029
+  Name: "Class"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1944135849184987028
+  ChildIds: 10989326170784015916
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 50
+    UIY: 55
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Button {
+      Label: "Class 2"
+      FontColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      FontSize: 25
+      ButtonColor {
+        G: 0.693872035
+        B: 0.242281199
+        A: 1
+      }
+      HoveredColor {
+        A: 0.85800004
+      }
+      PressedColor {
+        R: 0.27142787
+        G: 0.0820000172
+        B: 1
+        A: 1
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10989326170784015916
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5438069969417795029
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 275
+    UIX: 300
+    UIY: -55
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        G: 0.693872035
+        B: 0.242281199
+        A: 1
+      }
+      TeamSettings {
+      }
     }
     AnchorLayout {
       SelfAnchor {
@@ -610,7 +923,7 @@ Objects {
 }
 Objects {
   Id: 4852676170096014431
-  Name: "UI Button"
+  Name: "Class"
   Transform {
     Location {
     }
@@ -623,6 +936,7 @@ Objects {
     }
   }
   ParentId: 1944135849184987028
+  ChildIds: 8328642689496866925
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -646,9 +960,11 @@ Objects {
         B: 1
         A: 1
       }
-      FontSize: 20
+      FontSize: 25
       ButtonColor {
-        A: 0.26700002
+        R: 0.794000149
+        G: 3.78608775e-07
+        A: 1
       }
       HoveredColor {
         A: 0.85800004
@@ -669,6 +985,61 @@ Objects {
         Id: 841534158063459245
       }
       IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8328642689496866925
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4852676170096014431
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 300
+    Height: 275
+    UIX: 300
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+      }
+      Color {
+        R: 0.97
+        G: 4.62532057e-07
+        A: 1
+      }
+      TeamSettings {
+      }
     }
     AnchorLayout {
       SelfAnchor {
