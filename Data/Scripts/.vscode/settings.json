@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/EquipmentPickupServer.asset": true,
+    "**/EquipmentPickupServer.asset.*": true,
+    "**/*.pbt": true,
+    "BulletClient.lua": true,
+    "EquipmentPickupClient.lua": true,
+    "EquipmentPickupServer.lua": true,
+    "WeaponAutoReloadClient.lua": true,
+    "WeaponSpreadClient.lua": true,
+    "WeaponAmmoFeedbackClient.lua": true,
+    "WeaponReticleUIClient.lua": true,
+    "WeaponReticleClient.lua": true,
+    "WeaponDamageShootServer.lua": true,
+    "WeaponAimServer.lua": true,
+    "WeaponAimClient.lua": true
+  }
+}
