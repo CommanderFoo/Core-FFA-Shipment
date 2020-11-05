@@ -24,5 +24,9 @@
       }
     }
   }
+  Marketplace {
+    Description: "An API."
+  }
   SerializationVersion: 65
+  DirectlyPublished: true
 }

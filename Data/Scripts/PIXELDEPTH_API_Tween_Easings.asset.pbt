@@ -4,5 +4,9 @@
   PlatformAssetType: 3
   TextAsset {
   }
+  Marketplace {
+    Description: "An API."
+  }
   SerializationVersion: 65
+  DirectlyPublished: true
 }
