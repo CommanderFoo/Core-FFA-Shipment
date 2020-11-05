@@ -45,11 +45,11 @@ end
 			self.change_evt(self.to)
 		end
 		
+		self.tween_finished = true
+		
 		if(type(self.complete_evt) == "function") then
 			self.complete_evt()
 		end
-
-		self.tween_finished = true
 	else
 		if(self.start_evt) then
 			self.start_evt()
@@ -67,11 +67,25 @@ end
 end
 
 function Tween:on_change(fn)
-	if(fn and type(fn) == "function") then
+	if(fn and type(fn) == "function" and self.change_evt == nil) then
 		self.change_evt = fn
 	end
 
 	return self
+end
+
+function Tween:set_from(from)
+	self.original = from
+end
+
+function Tween:reset()
+	self.time = 0
+
+	self.from = Tween.copy_table(self.original_from)
+	self.to = Tween.copy_table(self.original_to)
+
+	self.original = nil
+	self.tween_finished = false
 end
 
 function Tween:set_easing(ease)
@@ -83,7 +97,7 @@ function Tween:set_easing(ease)
 end
 
 function Tween:on_complete(fn)
-	if(fn and type(fn) == "function") then
+	if(fn and type(fn) == "function" and self.complete_evt == nil) then
 		self.complete_evt = fn
 	end
 	
@@ -91,7 +105,7 @@ function Tween:on_complete(fn)
 end
 
 function Tween:on_start(fn)
-	if(fn and type(fn) == "function") then
+	if(fn and type(fn) == "function" and self.start_evt == nil) then
 		self.start_evt = fn
 	end
 
@@ -106,27 +120,36 @@ function Tween:delay(delay_time)
 	return self
 end
 
+function Tween:stop()
+	self.tween_finished = true
+
+	if(self.complete_evt and type(self.complete_evt) == "function") then
+		self.complete_evt()
+	end
+end
+
 function Tween:active()
 	return not self.tween_finished
 end
 
  function Tween:new(duration, from, to)
 	self.__index = self
-
-	self.tween_finished = false
-	self.change_evt = nil
-	self.complete_evt = nil
-	self.start_evt = nil
-	self.easing = nil
-	self.delay_tween = 0
-	self.time_started = 0
-
+	
 	return setmetatable({
  
 		 duration = duration,
 		 from = from,
 		 to = to,
-		 time = 0
+		 time = 0,
+		 tween_finished = false,
+		 complete_evt = nil,
+		 start_evt = nil,
+		 easing = nil,
+		 delay_tween = 0,
+		 time_started = 0,
+		 original_from = Tween.copy_table(from),
+		 original_to = Tween.copy_table(to),
+		 change_evt = nil
  
 	 }, self)
  end
