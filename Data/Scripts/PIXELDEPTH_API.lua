@@ -1,9 +1,15 @@
-﻿local PIXELDEPTH = {}
+﻿local API = {}
 
---PIXELDEPTH.Utils = require(script:GetCustomProperty("PIXELDEPTH_API_Utils"))
+API.require = function(api, is_api, context)
+	if(is_api == nil or is_api == true) then
+		api = "API_" .. api
+	end
 
-PIXELDEPTH.require = function(api)
-	return require(script:GetCustomProperty("PIXELDEPTH_API_" .. api))
+	if(context == nil) then
+		context = script
+	end
+
+	return require(context:GetCustomProperty("PIXELDEPTH_" .. api))
 end
 
-return PIXELDEPTH
+return API
