@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9362961433814813585
-  Name: "PIXELDEPTH_Equipment"
+  Id: 2163635863331147484
+  Name: "PIXELDEPTH_Perks"
   PlatformAssetType: 3
   TextAsset {
   }

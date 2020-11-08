@@ -1,19 +1,15 @@
 ﻿local ffa_data = script:GetCustomProperty("ffa_data")
 
--- DEBUGS
-
-local DEBUG_RESET = true
-
 function on_player_joined(player)
 	local data = Storage.GetSharedPlayerData(ffa_data, player)
 
-	if(data.ll) then
-		player:SetResource("level", data.ll or 1)
-	end
+	print(player.name, "XP: " .. data.xp, "Level: " .. data.l, "Total Kills: " .. data.k, "Total Deaths: " .. data.d, "Kill Streak: " .. data.ks)
 
-	if(data.xp) then
-		player:SetResource("xp", data.xp)
-	end
+	player:SetResource("xp", data.xp or 0)
+	player:SetResource("level", data.l or 1)
+	player:SetResource("total_kills", data.k or 0)
+	player:SetResource("total_deaths", data.d or 0)
+	player:SetResource("high_kill_streak", data.ks or 0)
 
 	Events.BroadcastToAllPlayers("on_player_joined", player.name)
 end
@@ -21,25 +17,21 @@ end
 function on_player_left(player)
 	local xp = player:GetResource("xp")
 	local level = player:GetResource("level") or 1
+	local total_deaths = player:GetResource("total_deaths")
+	local total_kills = player:GetResource("total_kills")
+	local high_kill_streak = player:GetResource("high_kill_streak")
 
-	-- TODO:  don't hardcode this
-	-- we set the xp that is stored in the shared key to a max 
-	-- value to prevent it getting blown up too big and
-	-- using too much key space
-	
 	if(xp > 120280) then
 		xp = 120280
 	end
 
-	if(DEBUG_RESET) then
-		xp = 0
-		level = 1
-	end
-
 	Storage.SetSharedPlayerData(ffa_data, player, {
 
-		["ll"] = level,
-		["xp"] = xp
+		["xp"] = xp,
+		["l"] = level,
+		["d"] = total_deaths,
+		["k"] = total_kills,
+		["ks"] = high_kill_streak
 
 	})
 

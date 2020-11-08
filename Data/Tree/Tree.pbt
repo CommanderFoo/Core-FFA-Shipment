@@ -397,15 +397,57 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:debug_text"
-      ObjectReference {
-        SelfId: 11325744012736197627
-      }
-    }
-    Overrides {
       Name: "cs:messenger"
       ObjectReference {
         SelfId: 16653042817522226198
+      }
+    }
+    Overrides {
+      Name: "cs:XP"
+      ObjectReference {
+        SelfId: 8007175402745751488
+      }
+    }
+    Overrides {
+      Name: "cs:Level"
+      ObjectReference {
+        SelfId: 17885775941529732201
+      }
+    }
+    Overrides {
+      Name: "cs:Kills"
+      ObjectReference {
+        SelfId: 6698029861709933226
+      }
+    }
+    Overrides {
+      Name: "cs:Deaths"
+      ObjectReference {
+        SelfId: 10352221149358727736
+      }
+    }
+    Overrides {
+      Name: "cs:KillStreak"
+      ObjectReference {
+        SelfId: 17409945663819641871
+      }
+    }
+    Overrides {
+      Name: "cs:HighestKillStreak"
+      ObjectReference {
+        SelfId: 12534713412889617951
+      }
+    }
+    Overrides {
+      Name: "cs:TotalKills"
+      ObjectReference {
+        SelfId: 14479112298101667050
+      }
+    }
+    Overrides {
+      Name: "cs:TotalDeaths"
+      ObjectReference {
+        SelfId: 5885401822338348417
       }
     }
   }

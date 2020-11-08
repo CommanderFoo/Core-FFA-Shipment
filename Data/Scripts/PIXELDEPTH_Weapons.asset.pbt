@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9362961433814813585
-  Name: "PIXELDEPTH_Equipment"
+  Id: 13640537296973504035
+  Name: "PIXELDEPTH_Weapons"
   PlatformAssetType: 3
   TextAsset {
   }

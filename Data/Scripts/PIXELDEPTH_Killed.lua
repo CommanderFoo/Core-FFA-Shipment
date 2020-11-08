@@ -5,28 +5,43 @@
 			["by"] = damage.sourcePlayer.name,
 			["who"] = player.name,
 			["ks"] = 0
+
 		}
 
 		if(player.id ~= damage.sourcePlayer.id) then
-			local ks = damage.sourcePlayer:GetResource("ks")
+			local kill_streak = damage.sourcePlayer:GetResource("kill_streak")
 			local xp = damage.sourcePlayer:GetResource("xp")
+			local total_kills = damage.sourcePlayer:GetResource("total_kills")
+			local high_kill_streak = damage.sourcePlayer:GetResource("high_kill_streak")
+			local kills = damage.sourcePlayer:GetResource("kills")
 
-			local new_ks = ks + 1;
+			local new_kill_streak = kill_streak + 1;
 
-			damage.sourcePlayer:SetResource("ks", new_ks)
+			damage.sourcePlayer:SetResource("kill_streak", new_kill_streak)
 			damage.sourcePlayer:SetResource("xp", xp + 100)
-			
+			damage.sourcePlayer:SetResource("total_kills", total_kills + 1)
+			damage.sourcePlayer:SetResource("kills", kills + 1)
+
+			if(new_kill_streak > high_kill_streak) then
+				damage.sourcePlayer:SetResource("high_kill_streak", new_kill_streak)
+			end
+
 			local on_kill_streak = false
 
-			if(new_ks % 5 == 0) then
+			if(new_kill_streak % 5 == 0) then
 				on_kill_streak = true
 			end
 
 			if(on_kill_streak) then
-				evt_data.ks = new_ks
+				evt_data.ks = new_kill_streak
 			end
 			
-			player:SetResource("ks", 0)
+			local total_deaths = player:GetResource("total_deaths")
+			local deaths = player:GetResource("deaths")
+
+			player:SetResource("kill_streak", 0)
+			player:SetResource("total_deaths", total_deaths + 1)
+			player:SetResource("deaths", deaths + 1)
 		end
 
 		Events.BroadcastToAllPlayers("on_player_killed", evt_data)
