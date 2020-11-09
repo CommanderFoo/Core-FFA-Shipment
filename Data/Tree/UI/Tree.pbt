@@ -1188,8 +1188,10 @@ Objects {
     }
   }
   ParentId: 11029647721839251083
+  ChildIds: 2035009838344653860
   ChildIds: 4024916481341499241
-  ChildIds: 1944135849184987028
+  ChildIds: 9480166006019430336
+  ChildIds: 11945542562591117885
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1197,8 +1199,8 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 800
-    Height: 500
+    Width: 650
+    Height: 220
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1221,8 +1223,70 @@ Objects {
   }
 }
 Objects {
-  Id: 1944135849184987028
-  Name: "Classes"
+  Id: 11945542562591117885
+  Name: "Notice"
+  Transform {
+    Location {
+      X: -469.725555
+      Y: -719.862671
+      Z: 284.713165
+    }
+    Rotation {
+      Yaw: -83.5752335
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16944460689344375616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: -22.2437935
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "Class will change on next respawn"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9480166006019430336
+  Name: "Buttons"
   Transform {
     Location {
     }
@@ -1235,11 +1299,9 @@ Objects {
     }
   }
   ParentId: 16944460689344375616
-  ChildIds: 4852676170096014431
-  ChildIds: 5438069969417795029
-  ChildIds: 12971470759386040739
-  ChildIds: 17653090361612236592
-  ChildIds: 17369926035535482575
+  ChildIds: 11689202521324509894
+  ChildIds: 6648380993398460214
+  ChildIds: 10180061109954103461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1247,33 +1309,34 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 250
-    Height: 270
-    UIX: 100
+    Width: 100
+    Height: 100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
+    UseParentHeight: true
     Panel {
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
   }
 }
 Objects {
-  Id: 17369926035535482575
-  Name: "Class"
+  Id: 10180061109954103461
+  Name: "UI Button"
   Transform {
     Location {
     }
@@ -1285,8 +1348,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1944135849184987028
-  ChildIds: 1406835701139470323
+  ParentId: 9480166006019430336
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1294,287 +1356,14 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 100
-    Height: 50
-    UIY: 220
+    Width: 150
+    Height: 60
+    UIX: 170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
-    Button {
-      Label: "Class 5"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 25
-      ButtonColor {
-        R: 0.356400251
-        B: 0.973445594
-        A: 1
-      }
-      HoveredColor {
-        A: 0.85800004
-      }
-      PressedColor {
-        R: 0.27142787
-        G: 0.0820000172
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Brush {
-        Id: 841534158063459245
-      }
-      IsButtonEnabled: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 1406835701139470323
-  Name: "UI Image"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17369926035535482575
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Control {
-    Width: 300
-    Height: 275
-    UIX: 300
-    UIY: -220
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        R: 0.356400251
-        B: 0.973445594
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 17653090361612236592
-  Name: "Class"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1944135849184987028
-  ChildIds: 12396961221558885845
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 100
-    Height: 50
-    UIY: 165
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Button {
-      Label: "Class 4"
-      FontColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      FontSize: 25
-      ButtonColor {
-        R: 0.270497859
-        G: 1
-        A: 1
-      }
-      HoveredColor {
-        A: 0.85800004
-      }
-      PressedColor {
-        R: 0.27142787
-        G: 0.0820000172
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Brush {
-        Id: 841534158063459245
-      }
-      IsButtonEnabled: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12396961221558885845
-  Name: "UI Image"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17653090361612236592
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Control {
-    Width: 300
-    Height: 275
-    UIX: 300
-    UIY: -165
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        R: 0.270497859
-        G: 1
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12971470759386040739
-  Name: "Class"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1944135849184987028
-  ChildIds: 7952288319667095335
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 100
-    Height: 50
-    UIY: 110
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
     Button {
       Label: "Class 3"
       FontColor {
@@ -1585,16 +1374,17 @@ Objects {
       }
       FontSize: 25
       ButtonColor {
-        R: 0.0781874284
-        G: 0.0822827145
         A: 1
       }
       HoveredColor {
-        A: 0.85800004
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
       PressedColor {
-        R: 0.27142787
-        G: 0.0820000172
+        R: 1
+        G: 1
         B: 1
         A: 1
       }
@@ -1608,24 +1398,25 @@ Objects {
         Id: 841534158063459245
       }
       IsButtonEnabled: true
+      OnlyUseMainColor: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
   }
 }
 Objects {
-  Id: 7952288319667095335
-  Name: "UI Image"
+  Id: 6648380993398460214
+  Name: "UI Button"
   Transform {
     Location {
     }
@@ -1637,64 +1428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12971470759386040739
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Control {
-    Width: 300
-    Height: 275
-    UIX: 300
-    UIY: -110
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        R: 0.0781874284
-        G: 0.0822827145
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 5438069969417795029
-  Name: "Class"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1944135849184987028
-  ChildIds: 10989326170784015916
+  ParentId: 9480166006019430336
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1702,15 +1436,13 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 100
-    Height: 50
-    UIY: 55
+    Width: 150
+    Height: 60
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     Button {
       Label: "Class 2"
       FontColor {
@@ -1721,16 +1453,17 @@ Objects {
       }
       FontSize: 25
       ButtonColor {
-        G: 0.693872035
-        B: 0.242281199
         A: 1
       }
       HoveredColor {
-        A: 0.85800004
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
       PressedColor {
-        R: 0.27142787
-        G: 0.0820000172
+        R: 1
+        G: 1
         B: 1
         A: 1
       }
@@ -1744,24 +1477,25 @@ Objects {
         Id: 841534158063459245
       }
       IsButtonEnabled: true
+      OnlyUseMainColor: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
   }
 }
 Objects {
-  Id: 10989326170784015916
-  Name: "UI Image"
+  Id: 11689202521324509894
+  Name: "UI Button"
   Transform {
     Location {
     }
@@ -1773,64 +1507,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5438069969417795029
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Control {
-    Width: 300
-    Height: 275
-    UIX: 300
-    UIY: -55
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        G: 0.693872035
-        B: 0.242281199
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 4852676170096014431
-  Name: "Class"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1944135849184987028
-  ChildIds: 8328642689496866925
+  ParentId: 9480166006019430336
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1838,14 +1515,14 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 100
-    Height: 50
+    Width: 150
+    Height: 60
+    UIX: -170
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     Button {
       Label: "Class 1"
       FontColor {
@@ -1856,16 +1533,17 @@ Objects {
       }
       FontSize: 25
       ButtonColor {
-        R: 0.794000149
-        G: 3.78608775e-07
         A: 1
       }
       HoveredColor {
-        A: 0.85800004
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
       PressedColor {
-        R: 0.27142787
-        G: 0.0820000172
+        R: 1
+        G: 1
         B: 1
         A: 1
       }
@@ -1879,71 +1557,17 @@ Objects {
         Id: 841534158063459245
       }
       IsButtonEnabled: true
+      OnlyUseMainColor: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 8328642689496866925
-  Name: "UI Image"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4852676170096014431
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 300
-    Height: 275
-    UIX: 300
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-      }
-      Color {
-        R: 0.97
-        G: 4.62532057e-07
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -1984,7 +1608,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.57100004
+        A: 0.488000035
       }
       TeamSettings {
       }
@@ -1998,6 +1622,61 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2035009838344653860
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16944460689344375616
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 7636346745991700183
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
         }
       }
     }

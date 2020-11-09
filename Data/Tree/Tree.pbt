@@ -486,9 +486,29 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:class_btn_container"
+      Name: "cs:class_btns"
       ObjectReference {
-        SelfId: 1944135849184987028
+        SelfId: 9480166006019430336
+      }
+    }
+    Overrides {
+      Name: "cs:active_class_color"
+      Color {
+        R: 0.00891202
+        B: 0.0510417633
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:notice"
+      ObjectReference {
+        SelfId: 11945542562591117885
+      }
+    }
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -604,6 +624,12 @@ Objects {
         Type {
           Value: "mc:enetreferencetype:sharedpersistence"
         }
+      }
+    }
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }

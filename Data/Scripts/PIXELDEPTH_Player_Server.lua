@@ -1,9 +1,13 @@
 ﻿local ffa_data = script:GetCustomProperty("ffa_data")
+local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+
+PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
 
 function on_player_joined(player)
 	local data = Storage.GetSharedPlayerData(ffa_data, player)
-
-	print(player.name, "XP: " .. data.xp, "Level: " .. data.l, "Total Kills: " .. data.k, "Total Deaths: " .. data.d, "Kill Streak: " .. data.ks)
+	
+	--PIXELDEPTH.Utils.dumpp(data)
+	--print(player.name, "XP: " .. data.xp, "Level: " .. data.l, "Total Kills: " .. data.k, "Total Deaths: " .. data.d, "Kill Streak: " .. data.ks)
 
 	player:SetResource("xp", data.xp or 0)
 	player:SetResource("level", data.l or 1)
@@ -15,6 +19,8 @@ function on_player_joined(player)
 end
 
 function on_player_left(player)
+	local data = Storage.GetSharedPlayerData(ffa_data, player)
+
 	local xp = player:GetResource("xp")
 	local level = player:GetResource("level") or 1
 	local total_deaths = player:GetResource("total_deaths")
@@ -25,13 +31,41 @@ function on_player_left(player)
 		xp = 120280
 	end
 
+	--xp = 0
+	--level = 1
+
+	if(level < 15) then
+		data.c3 = 1
+
+		if(data.dc == 3) then
+			data.dc = 1
+		end
+	end
+
+	if(level < 10) then
+		data.c2 = 1
+
+		if(data.dc == 2) then
+			data.dc = 1
+		end
+	end
+
+	if(level < 5) then
+		data.c1 = 1
+		data.dc = 1
+	end
+
 	Storage.SetSharedPlayerData(ffa_data, player, {
 
 		["xp"] = xp,
 		["l"] = level,
 		["d"] = total_deaths,
 		["k"] = total_kills,
-		["ks"] = high_kill_streak
+		["ks"] = high_kill_streak,
+		["c1"] = data.c1 or 1,
+		["c2"] = data.c2 or 1,
+		["c3"] = data.c3 or 1,
+		["dc"] = data.dc or 1
 
 	})
 
