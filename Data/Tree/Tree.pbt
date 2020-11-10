@@ -21,6 +21,7 @@ Objects {
   ChildIds: 15012712991265619918
   ChildIds: 7193685109751679562
   ChildIds: 1724364484967148277
+  ChildIds: 14191459994994477993
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +31,50 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14191459994994477993
+  Name: "Basic Shotgun"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3547920819172201709
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Basic Shotgun"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -202.180359
+            Y: 2543.3186
+            Z: 149.899414
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "WeaponRange"
+          Float: 850
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15495812947899015931
+    }
   }
 }
 Objects {

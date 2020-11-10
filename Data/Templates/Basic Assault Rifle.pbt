@@ -69,9 +69,8 @@
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 30
-            BurstDuration: 6
-            BurstStopsWithRelease: true
+            BurstCount: 3
+            BurstDuration: 5
             AttackCooldown: 0.25
             Range: 100000
             ImpactPlayerAssetRef {
@@ -80,7 +79,7 @@
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 500000
+            MaxAmmo: 30
             AmmoType: "rounds"
             MultiShot: 1
             ProjectileSpeed: 25000
@@ -97,7 +96,7 @@
             ReloadAbility {
               SubObjectId: 17342228179914680811
             }
-            Damage: 100
+            Damage: 25
           }
         }
       }
@@ -162,6 +161,7 @@
             }
           }
           CooldownPhaseSettings {
+            Duration: 0.4
             CanMove: true
             CanJump: true
             CanRotate: true

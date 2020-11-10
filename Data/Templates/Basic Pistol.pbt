@@ -65,11 +65,12 @@
             ImpactProjectileAssetRef {
               Id: 841534158063459245
             }
+            IsHitscan: true
             BeamAssetRef {
               Id: 841534158063459245
             }
             BurstCount: 1
-            BurstDuration: 1
+            BurstDuration: 20
             AttackCooldown: 0.25
             Range: 70000
             ImpactPlayerAssetRef {
@@ -78,24 +79,23 @@
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 16
+            MaxAmmo: 15
             AmmoType: "rounds"
             MultiShot: 1
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 2
+            SpreadMax: 1
             SpreadDecreaseSpeed: 8
-            SpreadIncreasePerShot: 1
-            SpreadPenaltyPerShot: 0.5
+            SpreadIncreasePerShot: 0.2
             DefaultAbility {
               SubObjectId: 5047134629311476418
             }
             ReloadAbility {
               SubObjectId: 17873086566573210660
             }
-            Damage: 25
+            Damage: 20
           }
         }
       }

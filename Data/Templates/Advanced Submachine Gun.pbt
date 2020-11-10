@@ -212,7 +212,7 @@
               Id: 307406115803496087
             }
             ReticleType {
-              Value: "mc:ereticletype:none"
+              Value: "mc:ereticletype:crosshair"
             }
             MaxAmmo: 30
             AmmoType: "rounds"
@@ -221,8 +221,8 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 2.6
-            SpreadDecreaseSpeed: 7
+            SpreadMax: 2
+            SpreadDecreaseSpeed: 8
             SpreadIncreasePerShot: 0.6
             SpreadPenaltyPerShot: 0.4
             DefaultAbility {

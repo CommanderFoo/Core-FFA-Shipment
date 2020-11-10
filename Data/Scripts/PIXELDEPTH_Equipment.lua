@@ -25,7 +25,7 @@ function change_class(player, class_index)
 end
 
 function give_weapon(player, data, disabled)
-	local the_weapon = 1
+	local the_weapon = 5
 	local default_class = "c1"
 
 	if(data.dc) then
@@ -35,6 +35,9 @@ function give_weapon(player, data, disabled)
 	if(data[default_class]) then
 		the_weapon = data[default_class]
 	end
+
+	-- DEBUG
+	the_weapon = 10
 
 	local weapon = weapon_assets.context.get(the_weapon)
 	local equipment = World.SpawnAsset(weapon)

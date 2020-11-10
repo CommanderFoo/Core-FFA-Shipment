@@ -107,13 +107,13 @@ end
 
 function OnBindingPressed(player, actionName)
     if actionName == AIM_BINDING then
-        EnableScoping(player)
+       -- EnableScoping(player)
 	end
 end
 
 function OnBindingReleased(player, actionName)
     if actionName == AIM_BINDING then
-        ResetScoping(player)
+       -- ResetScoping(player)
 	end
 end
 

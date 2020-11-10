@@ -37,7 +37,12 @@ RANKS[4] = {
 RANKS[5] = {
 
 	["name"] = "Lance Corporal I",
-	["xp"] = 480
+	["xp"] = 480,
+	["unlock"] = {
+		
+		weapon = "pistol"
+
+	}
 	
 }
 
@@ -51,14 +56,24 @@ RANKS[6] = {
 RANKS[7] = {
 
 	["name"] = "Corporal",
-	["xp"] = 1080
+	["xp"] = 1080,
+	["unlock"] = {
+		
+		weapon = "knife"
+
+	}
 	
 }
 
 RANKS[8] = {
 
 	["name"] = "Corporal I",
-	["xp"] = 1470
+	["xp"] = 1470,
+	["unlock"] = {
+		
+		weapon = "basic_smg"
+
+	}
 	
 }
 
@@ -72,7 +87,7 @@ RANKS[9] = {
 RANKS[10] = {
 
 	["name"] = "Sergeant",
-	["xp"] = 2430
+	["xp"] = 2430,
 	
 }
 
@@ -86,7 +101,12 @@ RANKS[11] = {
 RANKS[12] = {
 
 	["name"] = "Sergeant II",
-	["xp"] = 3650
+	["xp"] = 3650,
+	["unlock"] = {
+		
+		weapon = "basic_ar"
+
+	}
 	
 }
 
@@ -107,7 +127,12 @@ RANKS[14] = {
 RANKS[15] = {
 
 	["name"] = "Staff Sergeant II",
-	["xp"] = 6080
+	["xp"] = 6080,
+	["unlock"] = {
+		
+		weapon = "basic_shotgun"
+
+	}
 	
 }
 
@@ -135,7 +160,12 @@ RANKS[18] = {
 RANKS[19] = {
 
 	["name"] = "Master Sergeant",
-	["xp"] = 10440
+	["xp"] = 10440,
+	["unlock"] = {
+		
+		weapon = "axe"
+
+	}
 	
 }
 
@@ -170,7 +200,12 @@ RANKS[23] = {
 RANKS[24] = {
 
 	["name"] = "Master Gunnery Sergeant II",
-	["xp"] = 17690
+	["xp"] = 17690,
+	["unlock"] = {
+		
+		weapon = "advanced_pistol"
+
+	}
 	
 }
 
@@ -212,7 +247,12 @@ RANKS[29] = {
 RANKS[30] = {
 
 	["name"] = "First Lieutenant II",
-	["xp"] = 29030
+	["xp"] = 29030,
+	["unlock"] = {
+		
+		weapon = "advanced_smg"
+
+	}
 	
 }
 
@@ -247,7 +287,12 @@ RANKS[34] = {
 RANKS[35] = {
 
 	["name"] = "Major I",
-	["xp"] = 41280
+	["xp"] = 41280,
+	["unlock"] = {
+		
+		weapon = "advanced_shotgun"
+
+	}
 	
 }
 
@@ -275,7 +320,12 @@ RANKS[38] = {
 RANKS[39] = {
 
 	["name"] = "Lieutenant Colonel II",
-	["xp"] = 53240
+	["xp"] = 53240,
+	["unlock"] = {
+		
+		weapon = "advanced_ar"
+
+	}
 	
 }
 
@@ -296,7 +346,12 @@ RANKS[41] = {
 RANKS[42] = {
 
 	["name"] = "Colonel II",
-	["xp"] = 63470
+	["xp"] = 63470,
+	["unlock"] = {
+		
+		weapon = "sword"
+
+	}
 	
 }
 
@@ -317,7 +372,12 @@ RANKS[44] = {
 RANKS[45] = {
 
 	["name"] = "Brigadier General II",
-	["xp"] = 74780
+	["xp"] = 74780,
+	["unlock"] = {
+		
+		weapon = "revolver"
+
+	}
 	
 }
 
@@ -345,7 +405,12 @@ RANKS[48] = {
 RANKS[49] = {
 
 	["name"] = "Lieutenant General",
-	["xp"] = 91540
+	["xp"] = 91540,
+	["unlock"] = {
+		
+		weapon = "hammer"
+
+	}
 	
 }
 
@@ -366,7 +431,12 @@ RANKS[51] = {
 RANKS[52] = {
 
 	["name"] = "General",
-	["xp"] = 105370
+	["xp"] = 105370,
+	["unlock"] = {
+		
+		weapon = "crossbow"
+
+	}
 	
 }
 
@@ -387,7 +457,12 @@ RANKS[54] = {
 RANKS[55] = {
 
 	["name"] = "Commander",
-	["xp"] = 120280
+	["xp"] = 120280,
+	["unlock"] = {
+		
+		weapon = "grenade_launcher"
+
+	}
 	
 }
 

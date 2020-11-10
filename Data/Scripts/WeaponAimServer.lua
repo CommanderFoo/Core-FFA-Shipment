@@ -87,15 +87,15 @@ end
 
 function OnBindingPressed(player, actionName)
     if actionName == AIM_BINDING then
-        SetAimingSpeed(player)
-        isAiming = true
+        --SetAimingSpeed(player)
+        --isAiming = true
 	end
 end
 
 function OnBindingReleased(player, actionName)
     if actionName == AIM_BINDING then
-        ResetPlayerSpeed(player)
-        isAiming = false
+        --ResetPlayerSpeed(player)
+       -- isAiming = false
 	end
 end
 
