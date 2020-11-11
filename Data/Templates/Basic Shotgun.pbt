@@ -72,14 +72,14 @@
             BurstCount: 1
             BurstDuration: 1
             AttackCooldown: 0.25
-            Range: 8000
+            Range: 850
             ImpactPlayerAssetRef {
               Id: 307406115803496087
             }
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 10
+            MaxAmmo: 8
             AmmoType: "rounds"
             MultiShot: 5
             ProjectileSpeed: 25000
@@ -766,5 +766,5 @@
       AssetId: "Basic_Shotgun"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

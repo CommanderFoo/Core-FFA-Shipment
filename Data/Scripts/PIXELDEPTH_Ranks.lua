@@ -431,12 +431,7 @@ RANKS[51] = {
 RANKS[52] = {
 
 	["name"] = "General",
-	["xp"] = 105370,
-	["unlock"] = {
-		
-		weapon = "crossbow"
-
-	}
+	["xp"] = 105370
 	
 }
 
@@ -450,19 +445,19 @@ RANKS[53] = {
 RANKS[54] = {
 
 	["name"] = "General II",
-	["xp"] = 115190
+	["xp"] = 115190,
+	["unlock"] = {
+		
+		weapon = "grenade_launcher"
+
+	}
 	
 }
 
 RANKS[55] = {
 
 	["name"] = "Commander",
-	["xp"] = 120280,
-	["unlock"] = {
-		
-		weapon = "grenade_launcher"
-
-	}
+	["xp"] = 120280
 	
 }
 

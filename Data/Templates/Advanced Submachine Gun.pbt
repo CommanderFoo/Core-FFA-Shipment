@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -204,7 +204,7 @@
               Id: 841534158063459245
             }
             BurstCount: 30
-            BurstDuration: 8.5
+            BurstDuration: 10
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 25000
@@ -1110,5 +1110,5 @@
       AssetId: "Advanced_Submachine_Gun"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

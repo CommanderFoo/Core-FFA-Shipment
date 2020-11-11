@@ -882,5 +882,5 @@
       AssetId: "Advanced_Sword"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

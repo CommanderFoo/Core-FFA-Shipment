@@ -18,7 +18,11 @@ function player_left(name)
 end
 
 function player_killed(data)
-	add_feed_msg(string.format("%s killed %s", data.by, data.who))
+	if(data.s) then
+		add_feed_msg(string.format("%s killed themself", data.by))
+	else
+		add_feed_msg(string.format("%s killed %s", data.by, data.who))
+	end
 
 	if(data.ks > 0) then
 		player_killstreak(data.by, data.ks)

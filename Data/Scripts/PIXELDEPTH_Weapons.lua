@@ -18,7 +18,6 @@ WEAPONS[11] = "advanced_shotgun"
 WEAPONS[12] = "basic_ar"
 WEAPONS[13] = "advanced_ar"
 
-WEAPONS[14] = "crossbow"
-WEAPONS[15] = "grenade_launcher"
+WEAPONS[14] = "grenade_launcher"
 
 return WEAPONS

@@ -61,37 +61,26 @@ function Blast(center)
 
     local players = Game.FindPlayersInSphere(center, EXPLOSION_RADIUS)
     for _, player in pairs(players) do
-        local canDamage = false
 
-        -- Checks to blast the enemy team
-        if Teams.AreTeamsEnemies(player.team, WEAPON.owner.team) then
-            canDamage = true
-        -- Checks to blast the ally team (including damaging to self)
-        elseif FRIENDLY_EXPLOSION then
-            canDamage = true
-        end
+        local displacement = player:GetWorldPosition() - center
 
-        -- If canDamage is true and there is no objects obstructing the explosion then damage the player
-        if canDamage then
-            local displacement = player:GetWorldPosition() - center
+        -- The farther the player from the blast the less damage that player takes
+        local minDamage = EXPLOSION_DAMAGE_RANGE.x
+        local maxDamage = EXPLOSION_DAMAGE_RANGE.y
+        displacement.z = 0
+        local t = (displacement).size / EXPLOSION_RADIUS
+        local damageAmount = CoreMath.Lerp(maxDamage, minDamage, t)
 
-            -- The farther the player from the blast the less damage that player takes
-            local minDamage = EXPLOSION_DAMAGE_RANGE.x
-            local maxDamage = EXPLOSION_DAMAGE_RANGE.y
-            displacement.z = 0
-            local t = (displacement).size / EXPLOSION_RADIUS
-            local damageAmount = CoreMath.Lerp(maxDamage, minDamage, t)
+        -- Create damage information
+        local damage = Damage.New(damageAmount)
+        damage.sourcePlayer = WEAPON.owner
+        --damage.sourceAbility = WEAPON:GetAbilities()[1]
+        damage.reason = DamageReason.FRIENDLY_FIRE
+        -- Apply damage to player
+        player:ApplyDamage(damage)
 
-            -- Create damage information
-            local damage = Damage.New(damageAmount)
-            damage.sourcePlayer = WEAPON.owner
-
-            -- Apply damage to player
-            player:ApplyDamage(damage)
-
-            -- Create a direction at which the player is pushed away from the blast
-            player:AddImpulse((displacement):GetNormalized() * player.mass * EXPLOSION_KNOCKBACK_SPEED)
-        end
+        -- Create a direction at which the player is pushed away from the blast
+        --player:AddImpulse((displacement):GetNormalized() * player.mass * EXPLOSION_KNOCKBACK_SPEED)
     end
 
 end

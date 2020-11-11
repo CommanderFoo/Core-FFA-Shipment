@@ -37,7 +37,7 @@ function give_weapon(player, data, disabled)
 	end
 
 	-- DEBUG
-	the_weapon = 10
+	the_weapon = 5
 
 	local weapon = weapon_assets.context.get(the_weapon)
 	local equipment = World.SpawnAsset(weapon)

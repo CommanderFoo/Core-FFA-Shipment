@@ -99,6 +99,9 @@
             AppearanceChannelingTime: 2
             MountChannelingTime: 2
             FlipOnMultiJump: true
+            CanMoveUp: true
+            CanMoveDown: true
+            IsMountEnabled: true
           }
         }
       }
@@ -179,5 +182,5 @@
       AssetId: "First_Person_Camera_Settings"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

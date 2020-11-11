@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 16975801195317677333
-  Name: "WeaponAmmoFeedbackClient"
+  Id: 1947314065198355105
+  Name: "PIXELDEPTH_Ammo_UI"
   PlatformAssetType: 3
   TextAsset {
   }

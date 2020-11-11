@@ -33,7 +33,7 @@ local reticleInstance = nil
 local isSpawned = false
 local isAiming = false
 
-function Tick()
+--[[function Tick()
 
     -- Check if the owner of the weapon is the local player
     if Object.IsValid(WEAPON) and WEAPON.owner == LOCAL_PLAYER then
@@ -58,7 +58,7 @@ function Tick()
             end
         end
     end
-end
+end--]]
 
 function SpawnReticle()
     if RETICLE_TEMPLATE and reticleInstance == nil then

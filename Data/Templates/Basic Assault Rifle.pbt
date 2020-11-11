@@ -70,7 +70,7 @@
               Id: 841534158063459245
             }
             BurstCount: 3
-            BurstDuration: 5
+            BurstDuration: 6
             AttackCooldown: 0.25
             Range: 100000
             ImpactPlayerAssetRef {
@@ -1147,5 +1147,5 @@
       AssetId: "Basic_Assault_Rifle"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

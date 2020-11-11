@@ -25,7 +25,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -100,8 +100,8 @@
           Overrides {
             Name: "cs:ExplosionDamageRange"
             Vector2 {
-              X: 30
-              Y: 80
+              X: 50
+              Y: 100
             }
           }
           Overrides {
@@ -110,7 +110,7 @@
           }
           Overrides {
             Name: "cs:ExplosionKnockbackSpeed"
-            Float: 1400
+            Float: 0
           }
           Overrides {
             Name: "cs:DebugExplosion"
@@ -249,22 +249,22 @@
             BurstDuration: 1
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
-            Range: 100000
+            Range: 10000
             ImpactPlayerAssetRef {
               Id: 841534158063459245
             }
             ReticleType {
-              Value: "mc:ereticletype:none"
+              Value: "mc:ereticletype:crosshair"
             }
             MaxAmmo: 6
             AmmoType: "rounds"
             MultiShot: 1
-            ProjectileSpeed: 2600
-            ProjectileLifeSpan: 2.6
+            ProjectileSpeed: 2400
+            ProjectileLifeSpan: 2
             ProjectileGravity: 1.2
             ProjectileLength: 15
             ProjectileRadius: 15
-            ProjectileBounces: 4
+            ProjectileBounces: 2
             SpreadMax: 0.5
             DefaultAbility {
               SubObjectId: 7384840671123537033
@@ -272,6 +272,7 @@
             ReloadAbility {
               SubObjectId: 14491893532332739309
             }
+            Damage: 50
             WeaponTrajectoryMode {
               Value: "mc:eweapontrajectorymode:followlookvector"
             }
@@ -1322,7 +1323,7 @@
             IsTargetDataUpdated: true
           }
           CooldownPhaseSettings {
-            Duration: 0.2
+            Duration: 1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -1474,5 +1475,5 @@
       AssetId: "Advanced_Grenade_Launcher"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

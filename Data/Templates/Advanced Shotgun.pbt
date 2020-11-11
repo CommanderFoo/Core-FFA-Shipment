@@ -24,15 +24,15 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
-            Float: 15
+            Float: 100
           }
           Overrides {
             Name: "cs:HeadshotDamage"
-            Float: 60
+            Float: 150
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -207,14 +207,14 @@
             BurstCount: 1
             BurstDuration: 1
             AttackCooldown: 0.25
-            Range: 8000
+            Range: 700
             ImpactPlayerAssetRef {
               Id: 307406115803496087
             }
             ReticleType {
-              Value: "mc:ereticletype:none"
+              Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 10
+            MaxAmmo: 1
             AmmoType: "rounds"
             MultiShot: 5
             ProjectileSpeed: 10000
@@ -1207,5 +1207,5 @@
       AssetId: "Advanced_Shotgun"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

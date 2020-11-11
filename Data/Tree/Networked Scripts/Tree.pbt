@@ -93,12 +93,6 @@ Objects {
     Overrides {
       Name: "cs:14"
       AssetReference {
-        Id: 1040389235858880330
-      }
-    }
-    Overrides {
-      Name: "cs:15"
-      AssetReference {
         Id: 6706129283372581660
       }
     }

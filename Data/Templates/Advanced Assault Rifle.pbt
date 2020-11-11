@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -222,10 +222,10 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 3
+            SpreadMax: 1.7
             SpreadDecreaseSpeed: 5.5
-            SpreadIncreasePerShot: 0.5
-            SpreadPenaltyPerShot: 1
+            SpreadIncreasePerShot: 0.2
+            SpreadPenaltyPerShot: 0.5
             DefaultAbility {
               SubObjectId: 1295057997060522332
             }
@@ -1547,5 +1547,5 @@
       AssetId: "Advanced_Assault_Rifle"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

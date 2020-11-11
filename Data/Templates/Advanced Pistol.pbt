@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -1142,5 +1142,5 @@
       AssetId: "Advanced_Pistol"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

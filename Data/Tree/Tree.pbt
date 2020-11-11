@@ -21,7 +21,6 @@ Objects {
   ChildIds: 15012712991265619918
   ChildIds: 7193685109751679562
   ChildIds: 1724364484967148277
-  ChildIds: 14191459994994477993
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,50 +30,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 14191459994994477993
-  Name: "Basic Shotgun"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3547920819172201709
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Basic Shotgun"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -202.180359
-            Y: 2543.3186
-            Z: 149.899414
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "WeaponRange"
-          Float: 850
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15495812947899015931
-    }
   }
 }
 Objects {
@@ -354,6 +309,8 @@ Objects {
   ChildIds: 10472926499226061826
   ChildIds: 16653042817522226198
   ChildIds: 12011382631882427942
+  ChildIds: 11173929742660906152
+  ChildIds: 14304451811208614862
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -361,6 +318,82 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 14304451811208614862
+  Name: "PIXELDEPTH_Nametag"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012712991265619918
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:nametag_tpl"
+      AssetReference {
+        Id: 2499813271635472949
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13957666376178014896
+    }
+  }
+}
+Objects {
+  Id: 11173929742660906152
+  Name: "PIXELDEPTH_Ammo_UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15012712991265619918
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ammo_count"
+      ObjectReference {
+        SelfId: 4154724052755035850
+      }
+    }
+    Overrides {
+      Name: "cs:ammo_panel"
+      ObjectReference {
+        SelfId: 11594151118445841925
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1947314065198355105
+    }
   }
 }
 Objects {

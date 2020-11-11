@@ -70,7 +70,7 @@
               Id: 841534158063459245
             }
             BurstCount: 30
-            BurstDuration: 5
+            BurstDuration: 6
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 25000
@@ -705,5 +705,5 @@
       AssetId: "Basic_Submachine_Gun"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }
