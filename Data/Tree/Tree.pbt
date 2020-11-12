@@ -17,10 +17,12 @@ Objects {
   ChildIds: 315534523188149382
   ChildIds: 15577812600000809151
   ChildIds: 770488490238720269
-  ChildIds: 10904775536389546199
-  ChildIds: 15012712991265619918
+  ChildIds: 5253240157554064535
+  ChildIds: 6370711482403856410
   ChildIds: 7193685109751679562
   ChildIds: 1724364484967148277
+  ChildIds: 11693234414961003129
+  ChildIds: 9748714693919745203
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +32,71 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 9748714693919745203
+  Name: "Advanced Grenade"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18045273018505054026
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Grenade"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 868.82666
+            Y: -994.600525
+            Z: -0.0502929688
+          }
+        }
+        Overrides {
+          Name: "MaxAmmo"
+          Int: 2
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6530598883933501945
+    }
+  }
+}
+Objects {
+  Id: 11693234414961003129
+  Name: "Client Scripts"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Client Scripts"
   }
 }
 Objects {
@@ -291,8 +358,8 @@ Objects {
   }
 }
 Objects {
-  Id: 15012712991265619918
-  Name: "Client Scripts"
+  Id: 6370711482403856410
+  Name: "Sounds"
   Transform {
     Location {
     }
@@ -305,12 +372,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 2692436639450543280
-  ChildIds: 10472926499226061826
-  ChildIds: 16653042817522226198
-  ChildIds: 12011382631882427942
-  ChildIds: 11173929742660906152
-  ChildIds: 14304451811208614862
+  ChildIds: 13046872358671488104
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -321,8 +383,8 @@ Objects {
   }
 }
 Objects {
-  Id: 14304451811208614862
-  Name: "PIXELDEPTH_Nametag"
+  Id: 13046872358671488104
+  Name: "Player Hit"
   Transform {
     Location {
     }
@@ -334,326 +396,25 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:nametag_tpl"
-      AssetReference {
-        Id: 2499813271635472949
-      }
-    }
-  }
+  ParentId: 6370711482403856410
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Script {
-    ScriptAsset {
-      Id: 13957666376178014896
+  AudioInstance {
+    AudioAsset {
+      Id: 9723355816097497063
     }
+    Pitch: 1199.77759
+    Volume: 3.1369195
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
-  Id: 11173929742660906152
-  Name: "PIXELDEPTH_Ammo_UI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ammo_count"
-      ObjectReference {
-        SelfId: 4154724052755035850
-      }
-    }
-    Overrides {
-      Name: "cs:ammo_panel"
-      ObjectReference {
-        SelfId: 11594151118445841925
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 1947314065198355105
-    }
-  }
-}
-Objects {
-  Id: 12011382631882427942
-  Name: "PIXELDEPTH_Player_Messages"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:msgs_container"
-      ObjectReference {
-        SelfId: 6187006761738844322
-      }
-    }
-    Overrides {
-      Name: "cs:promo_txt"
-      AssetReference {
-        Id: 10361177162361645998
-      }
-    }
-    Overrides {
-      Name: "cs:sound"
-      ObjectReference {
-        SelfId: 7609706404651483792
-        SubObjectId: 6396276908183712420
-        InstanceId: 12904695520489846877
-        TemplateId: 3439130141810428105
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5691312417852736840
-    }
-  }
-}
-Objects {
-  Id: 16653042817522226198
-  Name: "PIXELDEPTH_Player_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:PIXELDEPTH_RANKS"
-      AssetReference {
-        Id: 7815028865570495210
-      }
-    }
-    Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
-      Name: "cs:messenger"
-      ObjectReference {
-        SelfId: 16653042817522226198
-      }
-    }
-    Overrides {
-      Name: "cs:XP"
-      ObjectReference {
-        SelfId: 8007175402745751488
-      }
-    }
-    Overrides {
-      Name: "cs:Level"
-      ObjectReference {
-        SelfId: 17885775941529732201
-      }
-    }
-    Overrides {
-      Name: "cs:Kills"
-      ObjectReference {
-        SelfId: 6698029861709933226
-      }
-    }
-    Overrides {
-      Name: "cs:Deaths"
-      ObjectReference {
-        SelfId: 10352221149358727736
-      }
-    }
-    Overrides {
-      Name: "cs:KillStreak"
-      ObjectReference {
-        SelfId: 17409945663819641871
-      }
-    }
-    Overrides {
-      Name: "cs:HighestKillStreak"
-      ObjectReference {
-        SelfId: 12534713412889617951
-      }
-    }
-    Overrides {
-      Name: "cs:TotalKills"
-      ObjectReference {
-        SelfId: 14479112298101667050
-      }
-    }
-    Overrides {
-      Name: "cs:TotalDeaths"
-      ObjectReference {
-        SelfId: 5885401822338348417
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10036777468913226098
-    }
-  }
-}
-Objects {
-  Id: 10472926499226061826
-  Name: "PIXELDEPTH_Class_Picker"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:class_ui"
-      ObjectReference {
-        SelfId: 16944460689344375616
-      }
-    }
-    Overrides {
-      Name: "cs:class_btns"
-      ObjectReference {
-        SelfId: 9480166006019430336
-      }
-    }
-    Overrides {
-      Name: "cs:active_class_color"
-      Color {
-        R: 0.00891202
-        B: 0.0510417633
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:notice"
-      ObjectReference {
-        SelfId: 11945542562591117885
-      }
-    }
-    Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2425870375457490383
-    }
-  }
-}
-Objects {
-  Id: 2692436639450543280
-  Name: "PIXELDEPTH_Feed"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15012712991265619918
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:feed_container"
-      ObjectReference {
-        SelfId: 15665953494340846489
-      }
-    }
-    Overrides {
-      Name: "cs:feed_line"
-      AssetReference {
-        Id: 5404452350067326022
-      }
-    }
-    Overrides {
-      Name: "cs:feed_line_color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 1542634807890507226
-    }
-  }
-}
-Objects {
-  Id: 10904775536389546199
+  Id: 5253240157554064535
   Name: "Server Scripts"
   Transform {
     Location {
@@ -667,116 +428,15 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 10228886015464289850
-  ChildIds: 17574444400243650927
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 17574444400243650927
-  Name: "PIXELDEPTH_Player_Server"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10904775536389546199
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ffa_data"
-      NetReference {
-        Key: "b3c9efbde4cc4105b1fc83f2de888744"
-        Type {
-          Value: "mc:enetreferencetype:sharedpersistence"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10200445020597966486
-    }
-  }
-}
-Objects {
-  Id: 10228886015464289850
-  Name: "PIXELDEPTH_Killed"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10904775536389546199
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
-      Name: "cs:feed_container"
-      ObjectReference {
-        SelfId: 15665953494340846489
-      }
-    }
-    Overrides {
-      Name: "cs:feed_line"
-      AssetReference {
-        Id: 5404452350067326022
-      }
-    }
-    Overrides {
-      Name: "cs:feed_line_color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10906881924338434508
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Server Scripts"
   }
 }
 Objects {

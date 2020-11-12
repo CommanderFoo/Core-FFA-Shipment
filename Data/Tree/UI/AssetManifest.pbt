@@ -25,3 +25,12 @@ Assets {
     AssetId: "FrameFlat_020"
   }
 }
+Assets {
+  Id: 6988616670015614072
+  Name: "Crosshair 020"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_020"
+  }
+}

@@ -3,11 +3,29 @@ local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
 
 PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
 
-function on_player_joined(player)
-	local data = Storage.GetSharedPlayerData(ffa_data, player)
+local players = {}
+
+function on_player_damaged(player, damage)
+    if(damage.sourcePlayer) then
+		Events.BroadcastToPlayer(player, "on_damaged", damage.sourcePlayer, player.hitPoints)
+		Events.BroadcastToPlayer(damage.sourcePlayer, "on_damage_hit", player)
+	end
 	
-	--PIXELDEPTH.Utils.dumpp(data)
-	--print(player.name, "XP: " .. data.xp, "Level: " .. data.l, "Total Kills: " .. data.k, "Total Deaths: " .. data.d, "Kill Streak: " .. data.ks)
+	if(players[player.id]) then
+		players[player.id].damage_timestamp = time()
+	end
+end
+
+function on_player_joined(player)
+	if(not players[player.id]) then
+		players[player.id] = {
+
+			damage_timestamp = 0
+
+		}
+	end
+
+	local data = Storage.GetSharedPlayerData(ffa_data, player)
 
 	player:SetResource("xp", data.xp or 0)
 	player:SetResource("level", data.l or 1)
@@ -16,6 +34,8 @@ function on_player_joined(player)
 	player:SetResource("high_kill_streak", data.ks or 0)
 
 	Events.BroadcastToAllPlayers("on_player_joined", player.name)
+
+	player.damagedEvent:Connect(on_player_damaged)
 end
 
 function on_player_left(player)
@@ -70,6 +90,10 @@ function on_player_left(player)
 	})
 
 	Events.BroadcastToAllPlayers("on_player_left", player.name)
+
+	if(players[player.id]) then
+		players[player.id] = nil
+	end
 end
 
 function disable_player(player)
@@ -101,6 +125,26 @@ end
 function player_levelled(player, level)
 	player:SetResource("level", level)
 end
+
+local regen_time_after_damage = 5
+local regen_amount = 10
+
+function regen()
+	for k, player in pairs(Game.GetPlayers()) do
+		if(players[player.id] and player.hitPoints < player.maxHitPoints and players[player.id].damage_timestamp > 0) then
+			if(time() > (players[player.id].damage_timestamp + regen_time_after_damage)) then
+				player.hitPoints = math.min(player.hitPoints + regen_amount, player.maxHitPoints) 
+			end
+		end
+	end
+end
+
+local regen_task = Task.Spawn(function()
+	regen()
+end)
+
+regen_task.repeatCount = -1
+regen_task.repeatInterval = 1
 
 Game.playerJoinedEvent:Connect(on_player_joined)
 Game.playerLeftEvent:Connect(on_player_left)

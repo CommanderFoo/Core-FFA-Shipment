@@ -667,7 +667,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10487198642387844799
+  Id: 14695283247712202199
   Name: "Post Processing"
   Transform {
     Location {
@@ -690,6 +690,271 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Post Processing"
+  }
+}
+Objects {
+  Id: 5150370516018159257
+  Name: "Post Processing Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 315534523188149382
+  ChildIds: 12964028792620254015
+  ChildIds: 15606586081368409979
+  ChildIds: 11726177369525544988
+  ChildIds: 2942135470202920873
+  ChildIds: 8796442200253985106
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 8796442200253985106
+  Name: "Speed Lines Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5150370516018159257
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Brightness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Radius"
+      Float: 1.14443588
+    }
+    Overrides {
+      Name: "bp:Solid Edge"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Streak Appearance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Effect Strength"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Tint B"
+      Color {
+        R: 0.973445594
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tint C"
+      Color {
+        R: 0.973445594
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Contrast"
+      Float: 2.38021111
+    }
+    Overrides {
+      Name: "bp:Tint A"
+      Color {
+        R: 0.973445594
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 15344246868278177897
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 2942135470202920873
+  Name: "Vingette Grain Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5150370516018159257
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Vignette Intensity"
+      Float: 0.107265122
+    }
+    Overrides {
+      Name: "bp:Grain Intensity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Grain Jitter"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2920556432021751741
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 11726177369525544988
+  Name: "Bloom Post Process"
+  Transform {
+    Location {
+      X: -2110
+      Y: -1335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5150370516018159257
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 3.89901376
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5556271614757209781
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 15606586081368409979
+  Name: "Color Grading Post Process"
+  Transform {
+    Location {
+      X: -2020
+      Y: -1235
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5150370516018159257
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:White Temperature"
+      Float: 6950.01611
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7151983334208985477
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 12964028792620254015
+  Name: "Ambient Occlusion Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5150370516018159257
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Blend Weight"
+      Float: 0.306296378
+    }
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 0.265085936
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10435647979670465118
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
@@ -748,7 +1013,7 @@ Objects {
     RespawnSettings {
       RespawnDelay: 0.3
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:inplace"
+        Value: "mc:erespawnmode:atclosestspawnpoint"
       }
     }
   }

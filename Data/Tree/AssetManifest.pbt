@@ -111,6 +111,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9723355816097497063
+  Name: "Impact Retro Hit 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_impact_retro_hit_02_Cue_ref"
+  }
+}
+Assets {
   Id: 8390555349236077489
   Name: "Decal Stains Bottom 01"
   PlatformAssetType: 14

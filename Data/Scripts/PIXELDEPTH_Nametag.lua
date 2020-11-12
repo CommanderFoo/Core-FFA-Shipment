@@ -3,14 +3,16 @@
 local local_player = Game.GetLocalPlayer()
 local nametags = {}
 
-function on_player_joined(player)
-	local nametag = World.SpawnAsset(nametag_tpl)
-	
-	nametag.text = player.name
-	nametags[player] = nametag
+function on_player_joined(player)	
+	if(player.id ~= local_player.id) then
+		local nametag = World.SpawnAsset(nametag_tpl)
+		
+		nametag.text = player.name
+		nametags[player] = nametag
 
-	nametag:AttachToPlayer(player, "nameplate")
-	nametag:SetScale(Vector3.New(1, 1, 1))
+		nametag:AttachToPlayer(player, "nameplate")
+		nametag:SetScale(Vector3.New(0.85, 0.85, 0.85))
+	end
 end
 
 function on_player_left(player)

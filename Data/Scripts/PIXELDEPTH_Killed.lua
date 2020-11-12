@@ -1,5 +1,5 @@
 ﻿function on_player_died(player, damage)
-	if damage.sourceAbility or damage.reason == DamageReason.FRIENDLY_FIRE then
+	if(damage.sourceAbility or damage.reason == DamageReason.FRIENDLY_FIRE) then
 		local evt_data = {
 			
 			["by"] = damage.sourcePlayer.name,
